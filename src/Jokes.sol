@@ -34,6 +34,6 @@ contract Joke is IJoke{
             prop = _jokes.next(semiIndex);
             count += 1;
             }
-        return count;
+        return count;///////////////////////////////////////////////////////
     }
 }
