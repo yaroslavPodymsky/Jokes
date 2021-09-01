@@ -8,7 +8,7 @@ contract Joke is IJoke{
     uint256 [] public _keys;
     
     constructor() public {
-        tvm.accept();
+        tvm.accept(); //some comment
     }
     function setValue(string value) public override {
         tvm.accept();
@@ -32,8 +32,7 @@ contract Joke is IJoke{
         while (prop.hasValue()) {
             (uint32 semiIndex, ) = prop.get();
             prop = _jokes.next(semiIndex);
-            count += 1;
-            }
+            count += 1;}
         return count;
     }
 }
