@@ -1,0 +1,66 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "setValue",
+			"inputs": [
+				{"name":"value","type":"string"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getValues",
+			"inputs": [
+				{"name":"index","type":"uint32"}
+			],
+			"outputs": [
+				{"name":"value0","type":"string"}
+			]
+		},
+		{
+			"name": "getLenght",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint32"}
+			]
+		},
+		{
+			"name": "_jokes",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"_jokes","type":"map(uint32,string)"}
+			]
+		},
+		{
+			"name": "_keys",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"_keys","type":"uint256[]"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"_jokes","type":"map(uint32,string)"},
+		{"name":"_keys","type":"uint256[]"}
+	]
+}
